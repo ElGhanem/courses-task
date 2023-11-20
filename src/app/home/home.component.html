@@ -1,0 +1,7 @@
+<div class="container mt-5 text-light">
+    <h1 class="fw-bold">Courses</h1>
+    <div class="d-flex slideViewer">
+        <course-temp *ngFor="let one of courses" [courseData]="one" (click)="showOverview(one)" class="col-md-3 col-sm-5"></course-temp>
+    </div>
+   
+</div>

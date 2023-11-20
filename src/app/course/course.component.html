@@ -1,0 +1,14 @@
+<div class="text-light card-bg p-3">
+    <div class="imgWrapper mb-2">
+        <img [src]="courseData.attributes.course.image_url" alt="Course Image">
+        <!-- <img src="https://www.thefitnessgrp.co.uk/wp-content/uploads/2022/10/uks-leading-provider.png" alt="Course Image"> -->
+    </div>
+    <h1 class="mb-3">{{courseData.attributes.name}}</h1>
+    <p class="fw-light">USD <span class="fs-5 fw-bold">{{courseData.attributes.price}}</span></p>
+    <div class="btnGroup w-100 d-flex justify-content-between">
+        <button type="button" class="btn btn-success col-9">Pay</button>
+        <button type="button" class="btn btn-outline-success col-2 d-flex justify-content-center align-items-center" >
+            <i class="fa fa-shopping-cart"></i>
+        </button>
+    </div>
+</div>

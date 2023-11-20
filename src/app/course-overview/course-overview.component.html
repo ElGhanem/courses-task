@@ -1,0 +1,52 @@
+<div class="container mt-5 text-light">
+    <div class="row">
+        <div class="col-md-9">
+            <h1>{{courseData.attributes.name}}</h1>
+        </div>
+        <div class="col-md-3">
+            <p class="fw-light">USD <span class="fs-5 fw-bold">{{courseData.attributes.price}}</span></p>
+            <div class="btnGroup w-100 d-flex justify-content-between">
+                <button type="button" class="btn btn-success col-9">Pay</button>
+                <button type="button" class="btn btn-outline-success col-2 d-flex justify-content-center align-items-center" >
+                    <i class="fa fa-shopping-cart"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row videoDis">
+        <iframe src="https://player.vimeo.com/video/256290314?speed=0&pip=0&quality=undefined&app_id=122963&texttrack=undefined" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Exploring Java"></iframe>
+        <!-- <iframe [src]="courseData.attributes.course.updatedVideoUrl" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Exploring Java"></iframe> -->
+    </div>
+
+    <div class="row">
+        <h1>LEVEL</h1>
+        <p>{{courseData.attributes.course.level.value}}</p>
+    </div>
+
+    <div class="row">
+        <h1>DESCRIPTIONS</h1>
+        <p>{{courseData.attributes.course.description}}</p>
+    </div>
+
+    <div class="row">
+        <h1>DURATION</h1>
+        <p>{{courseData.attributes.course.duration_in_hours}}h</p>
+    </div>
+
+    <div class="row">
+        <h1>START DATE</h1>
+        <p>{{courseData.attributes.course.start_date}}</p>
+    </div>
+    
+    <div class="row">
+        <h1>CONTENT</h1>
+        <ul class="mx-4">
+            <li *ngFor="let one of courseData.attributes.course.sections">{{one.title}}
+                <ul class="mx-4">
+                    <li *ngFor="let item of one.sessions">{{item.title}}</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</div>

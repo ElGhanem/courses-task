@@ -1,0 +1,14 @@
+.card-bg {
+    background-color: rgb(58, 58, 58);
+    cursor: pointer;
+}
+
+.imgWrapper {
+    height: 50%;
+}
+
+.imgWrapper img {
+    height: 100%;
+    max-width: 100%;
+    min-height: 320px;
+}

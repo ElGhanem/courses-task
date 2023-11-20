@@ -1,0 +1,25 @@
+.videoDis{ 
+    position: relative;
+    height: 800px;
+}
+
+@media screen and (max-width: 1024px) {
+    .videoDis{ 
+        height: 610px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .videoDis{ 
+        height: 450px;
+    }
+}
+@media screen and (max-width: 667px) {
+    .videoDis{ 
+        height: 400px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .videoDis{ 
+        height: 230px;
+    }
+}

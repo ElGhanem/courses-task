@@ -1,0 +1,12 @@
+.slideViewer {
+    width: 100%;
+    overflow-x: auto;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 667px) {
+    .slideViewer {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
